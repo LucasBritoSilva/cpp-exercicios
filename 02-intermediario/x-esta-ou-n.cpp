@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+#define MAX 100
+
 bool decide(int a[], int n, int x) {
     if (n == 0) {
         return false;
@@ -15,7 +17,7 @@ int main() {
     int n, x;
     cin >> n;
     cin >> x;
-    int a[n];
+    int a[MAX];
     for (int i = 0; i < n; i++) {
         cin >> a[i];
     }
