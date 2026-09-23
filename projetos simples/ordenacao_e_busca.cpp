@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 #define MAX 100
 
 void troca(int* a, int* b){
@@ -8,10 +9,19 @@ void troca(int* a, int* b){
     *b = c;
 }
 
+bool verifica(int v[MAX], int n){
+    for(int i = 0; i < n - 1; i++){
+        if(v[i+1] < v[i]){
+            return false;
+        }
+    }
+    return true;
+}
+
 void ordenar_b(int v[MAX], int n){
     for(int i = n - 1; i > 0; i--){
         for(int j = 0; j < i; j++){
-            if(v[j] < v[j+1]){
+            if(v[j] > v[j+1]){
                 troca(&v[j], &v[j+1]);
             }
         }
@@ -20,28 +30,53 @@ void ordenar_b(int v[MAX], int n){
 
 void ordenar_s(int v[MAX], int n){
     for(int i = 0; i < n - 1; i++){
-        int maior = i;
+        int menor = i;
         for(int j = i + 1; j < n; j++){
-            if(v[j] > v[maior]){
-                maior = j;
+            if(v[j] < v[menor]){
+                menor = j;
             }
         }
-        troca(&v[i], &v[maior]);
+        troca(&v[i], &v[menor]);
     }
 }
 
 void ordenar_i(int v[MAX], int n){
     for(int i = 1; i < n; i++){
-        int j = i;
-        while(j > 0 && v[j] > v[j-1]){
-            troca(&v[j], &v[j-1]);
+        int x = v[i];
+        int j = i - 1;
+
+        while(j >= 0 && v[j] > x){
+            v[j+1] = v[j];
             j--;
         }
+
+        v[j+1] = x;
     }
 }
 
+int busca(int v[MAX], int n, int x){
+    int inicio = 0;
+    int fim = n - 1;
+
+    while(inicio <= fim){
+        int meio = (inicio + fim) / 2;
+
+        if(v[meio] == x){
+            return meio;
+        }
+        else if(x < v[meio]){
+            fim = meio - 1;
+        }
+        else{
+            inicio = meio + 1;
+        }
+    }
+
+    return -1;
+}
+
 int main(){
-    int algoritmo, n;
+    int algoritmo, n, x;
     int v[MAX];
 
     cout << "Escolha o algoritmo de ordenacao:" << endl;
@@ -65,21 +100,30 @@ int main(){
     }
     cout << endl;
 
-    if(algoritmo == 1){
-        ordenar_b(v, n);
-    }
-    else if(algoritmo == 2){
-        ordenar_s(v, n);
-    }
-    else if(algoritmo == 3){
-        ordenar_i(v, n);
+    if(!verifica(v, n)){
+        if(algoritmo == 1){
+            ordenar_b(v, n);
+        }
+        else if(algoritmo == 2){
+            ordenar_s(v, n);
+        }
+        else if(algoritmo == 3){
+            ordenar_i(v, n);
+        }
     }
 
-    cout << "Vetor ordenado de forma decrescente: ";
+    cout << "Vetor ordenado: ";
     for(int i = 0; i < n; i++){
         cout << v[i] << " ";
     }
     cout << endl;
+
+    cout << "Digite o numero que deseja buscar: ";
+    cin >> x;
+
+    int posicao = busca(v, n, x);
+
+    cout << "Posicao: " << posicao << endl;
 
     return 0;
 }
