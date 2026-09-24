@@ -1,3 +1,9 @@
+/*
+    Programa que recebe uma quantidade de números e armazena os valores em um vetor.
+    A função dois_maiores() percorre o vetor e identifica o maior e o segundo maior
+    número, retornando os resultados por meio de ponteiros.
+*/
+
 #include <iostream>
 using namespace std;
 #define MAX 100
