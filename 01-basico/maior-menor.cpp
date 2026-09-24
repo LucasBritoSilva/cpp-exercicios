@@ -1,3 +1,9 @@
+/*
+    Programa que recebe uma quantidade de números e armazena os valores em um vetor.
+    A função min_max() percorre o vetor e identifica o maior e o menor elemento,
+    retornando os resultados por meio de ponteiros.
+*/
+
 #include <iostream>
 using namespace std;
 #define MAX 100
