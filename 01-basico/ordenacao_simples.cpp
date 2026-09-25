@@ -1,3 +1,9 @@
+/*
+    Programa que recebe uma quantidade de números e armazena os valores em um vetor.
+    A função verifica() percorre o vetor e verifica se os elementos estão em ordem crescente.
+    Ao final, o programa informa se o vetor está ordenado ou não.
+*/
+
 #include <iostream>
 using namespace std;
 
