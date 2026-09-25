@@ -1,3 +1,10 @@
+/*
+    Programa que recebe uma quantidade par de números e os analisa em pares.
+    A função soma_prod() calcula a soma e o produto de cada par de números.
+    O programa conta quantas vezes a soma é maior que o produto e quantas vezes
+    o produto é maior que a soma.
+*/
+
 #include <iostream>
 using namespace std;
 
