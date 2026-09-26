@@ -1,3 +1,10 @@
+/*
+    Programa que recebe uma quantidade de números e armazena os valores em um vetor.
+    A função maximo() percorre o vetor e identifica o maior elemento,
+    retornando o endereço de memória onde esse elemento está armazenado.
+    Ao final, o programa exibe o endereço retornado pela função.
+*/
+
 #include <iostream>
 using namespace std;
 #define MAX 100
