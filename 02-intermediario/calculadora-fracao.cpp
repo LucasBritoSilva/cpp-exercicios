@@ -1,3 +1,11 @@
+/*
+    Programa para realizar operações matemáticas com duas frações.
+    A estrutura "fracao" armazena o numerador e o denominador.
+    O programa possui funções para somar, subtrair, multiplicar e dividir
+    frações, permitindo que o usuário escolha qual operação deseja realizar.
+    Também verifica se os denominadores informados são diferentes de zero.
+*/
+
 #include <iostream>
 #include <string>
 
