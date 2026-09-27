@@ -1,3 +1,10 @@
+/*
+    Programa que verifica se um determinado número está presente em um vetor.
+    A função decide() realiza a busca de forma recursiva, verificando os elementos
+    do vetor um por um até encontrar o valor procurado ou chegar ao final do vetor.
+    Ao final, o programa informa se o número está ou não presente no vetor.
+*/
+
 #include <iostream>
 using namespace std;
 
