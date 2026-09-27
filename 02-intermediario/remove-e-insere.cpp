@@ -1,3 +1,17 @@
+/*
+    Funções para remoção e inserção de elementos em um vetor.
+    
+    A função remove() remove um elemento da posição informada utilizando um
+    laço de repetição, enquanto remove_r() realiza a mesma operação de forma
+    recursiva.
+
+    A função insere() insere um novo elemento na posição informada utilizando
+    um laço de repetição, enquanto insere_R() realiza a mesma operação de
+    forma recursiva.
+
+    As funções retornam o novo tamanho do vetor após a operação.
+*/
+
 #include <iostream>
 using namespace std;
 #define MAX 100
