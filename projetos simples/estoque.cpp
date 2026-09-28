@@ -1,3 +1,18 @@
+/*
+    Programa para gerenciamento de um estoque de produtos.
+    A estrutura "Produto" armazena o nome, preço e quantidade de cada produto.
+
+    O programa permite:
+    - Cadastrar produtos no estoque;
+    - Listar os produtos cadastrados;
+    - Calcular o valor total do estoque;
+    - Buscar um produto pelo nome;
+    - Aumentar o preço de um produto através de um percentual.
+
+    As funções recebem o vetor de produtos por meio de ponteiros e realizam
+    as operações diretamente nos dados armazenados no estoque.
+*/
+
 #include <iostream>
 using namespace std;
 
