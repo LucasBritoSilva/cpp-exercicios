@@ -1,3 +1,19 @@
+/*
+    Programa para ordenar e realizar uma busca em um vetor.
+
+    O usuário pode escolher entre três algoritmos de ordenação:
+    - Bubble Sort;
+    - Selection Sort;
+    - Insertion Sort.
+
+    A função verifica() verifica se o vetor já está ordenado antes de realizar
+    a ordenação. A função troca() é utilizada para trocar dois elementos do vetor.
+
+    Após ordenar o vetor, a função busca() utiliza a busca binária para procurar
+    um determinado número e retornar sua posição no vetor. Caso o número não
+    seja encontrado, retorna -1.
+*/
+
 #include <iostream>
 using namespace std;
 
