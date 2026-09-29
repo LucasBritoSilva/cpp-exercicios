@@ -1,3 +1,21 @@
+/*
+    Programa para cadastro e consulta de pessoas.
+
+    A estrutura "Pessoa" armazena informações como nome, CPF, renda e idade,
+    além da situação do Imposto de Renda e da aposentadoria.
+
+    O programa possui um menu que permite:
+    - Incluir novas pessoas;
+    - Listar todas as pessoas cadastradas;
+    - Encerrar o programa.
+
+    A função funcaoir() verifica a renda da pessoa e informa se ela é isenta
+    ou contribuinte. A função funcaoapo() verifica a idade e informa se a
+    pessoa já é aposentada ou quantos anos faltam para atingir a idade de 65 anos.
+
+    Os dados são armazenados em um vetor de estruturas do tipo Pessoa.
+*/
+
 #include <iostream>
 #include <string>
 
