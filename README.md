@@ -1,12 +1,12 @@
-# Exercícios em C++
+# Exercícios em C e C++
 
 Repositório criado para armazenar meus exercícios e práticas
-de programação em C++.
+de programação em C e C++.
 
 ## Objetivo
 
 Desenvolver minha lógica de programação e aprimorar meus
-conhecimentos na linguagem C++.
+conhecimentos na linguagem C e C++.
 
 ## Progresso
 
